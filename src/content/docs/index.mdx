@@ -17,54 +17,21 @@ hero:
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
-
-<style>
-  :root {
-    --astro-color-text: #00ffcc;
-    --astro-color-background: #000000;
-    --astro-color-link: #00ffff;
-    --astro-color-primary: #00ffcc;
-    --astro-border-radius: 8px;
-  }
-
-  .astro-code {
-    background: #111;
-    border: 1px solid #00ffcc;
-    color: #00ffcc;
-  }
-
-  .hero {
-    background: linear-gradient(180deg, #000000, #0f0f0f);
-    border-bottom: 2px solid #00ffcc;
-    box-shadow: 0 0 40px rgba(0, 255, 204, 0.2);
-  }
-
-  .card {
-    background: rgba(0, 0, 0, 0.7);
-    border: 1px solid #00ffff;
-    box-shadow: 0 0 10px #00ffcc;
-    transition: transform 0.3s ease;
-  }
-
-  .card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 20px #00ffff;
-  }
-</style>
+import "../../styles/starlight-theme.css";
 
 ## ⚡ Command Options
 
 <CardGrid stagger>
-	<Card title="🛠 Modify Console" icon="pencil">
-		Edit `src/content/docs/index.mdx` to reprogram this dashboard.
-	</Card>
-	<Card title="📄 Upload Intel" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to generate mission logs.
-	</Card>
-	<Card title="⚙️ Systems Configuration" icon="setting">
-		Edit your `sidebar` and other config files in `astro.config.mjs`.
-	</Card>
-	<Card title="📚 Core Archives" icon="open-book">
-		Explore [the Starlight Archives](https://starlight.astro.build/) to learn more.
-	</Card>
+  <Card title="🛠 Modify Console" icon="pencil">
+    Edit `src/content/docs/index.mdx` to reprogram this dashboard.
+  </Card>
+  <Card title="📄 Upload Intel" icon="add-document">
+    Add Markdown or MDX files to `src/content/docs` to generate mission logs.
+  </Card>
+  <Card title="⚙️ Systems Configuration" icon="setting">
+    Edit your `sidebar` and other config files in `astro.config.mjs`.
+  </Card>
+  <Card title="📚 Core Archives" icon="open-book">
+    Explore [the Starlight Archives](https://starlight.astro.build/) to learn more.
+  </Card>
 </CardGrid>
